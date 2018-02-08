@@ -3,10 +3,10 @@ function setup() {
 }
 // colors based on location of the mouse
 function draw() {
-  colorMode(RGB, 600, 600, 255);
-  background (mouseY, mouseX, 180);
+  colorMode(RGB, 600, 600, 255);//good use of colorMode but you could also write this out with background
+  background (mouseY, mouseX, 180);// background(600,600,255);
 
-  stroke(184, 142, 142, mouseX);
+  stroke(184, 142, 142, mouseX);//very interesting
   fill(mouseX, mouseY, 180);
   ellipse(mouseX, mouseY, 90, 90);
   
